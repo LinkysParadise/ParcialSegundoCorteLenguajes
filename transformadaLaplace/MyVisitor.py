@@ -5,7 +5,7 @@ class LaplaceTransformVisitor(laplaceVisitor):
     
     def visitPrintExpr(self, ctx: laplaceParser.PrintExprContext):
         value = self.visit(ctx.expr())
-        print(value)
+        print("= ",value)
         return value
 
     def visitRetrasoIdeal(self, ctx: laplaceParser.RetrasoIdealContext):
@@ -18,9 +18,8 @@ class LaplaceTransformVisitor(laplaceVisitor):
     def visitAmortiguacionExp(self, ctx: laplaceParser.AmortiguacionExpContext):
         return "1/(s + a)"
 
-    def visitNesimaPotencia(self, ctx: laplaceParser.NesimaPotenciaContext):
+    def visitNPotenciaConDesplazamiento(self, ctx: laplaceParser.NPotenciaConDesplazamientoContext):
         n = int(ctx.N().getText())
-        print("Por aqui pase")
         return f"{n}!/(s^{n+1})" 
 
     def visitQesimaPotencia(self, ctx: laplaceParser.QesimaPotenciaContext):
