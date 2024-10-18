@@ -1,0 +1,6 @@
+d(t - tau)
+u(t)
+t^2 * e^(-at)
+Sin(wt)
+log(t/t0)
+J(wt)
