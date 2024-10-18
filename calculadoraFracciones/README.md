@@ -104,10 +104,3 @@ Once the program starts, enter your mathematical expressions, and it will comput
 - (3 / 4)
 ```
 
-## Contributing
-
-Feel free to contribute by submitting issues or pull requests. Make sure to follow the contribution guidelines.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
