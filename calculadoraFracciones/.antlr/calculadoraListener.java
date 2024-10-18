@@ -1,4 +1,4 @@
-// Generated from /home/linky/Proyects/University/SextoSemestre/LenguajesDeProgramacion/Parcial2/calculadoraPython/calculadora.g4 by ANTLR 4.13.1
+// Generated from /home/linky/Proyects/University/SextoSemestre/LenguajesDeProgramacion/ParcialSegundoCorte/calculadoraFracciones/calculadora.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -77,6 +77,18 @@ public interface calculadoraListener extends ParseTreeListener {
 	 */
 	void exitNegative(calculadoraParser.NegativeContext ctx);
 	/**
+	 * Enter a parse tree produced by the {@code readFraction}
+	 * labeled alternative in {@link calculadoraParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterReadFraction(calculadoraParser.ReadFractionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code readFraction}
+	 * labeled alternative in {@link calculadoraParser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitReadFraction(calculadoraParser.ReadFractionContext ctx);
+	/**
 	 * Enter a parse tree produced by the {@code MulDiv}
 	 * labeled alternative in {@link calculadoraParser#expr}.
 	 * @param ctx the parse tree
@@ -100,28 +112,4 @@ public interface calculadoraListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitAddSub(calculadoraParser.AddSubContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code float}
-	 * labeled alternative in {@link calculadoraParser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void enterFloat(calculadoraParser.FloatContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code float}
-	 * labeled alternative in {@link calculadoraParser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void exitFloat(calculadoraParser.FloatContext ctx);
-	/**
-	 * Enter a parse tree produced by the {@code int}
-	 * labeled alternative in {@link calculadoraParser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void enterInt(calculadoraParser.IntContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code int}
-	 * labeled alternative in {@link calculadoraParser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void exitInt(calculadoraParser.IntContext ctx);
 }

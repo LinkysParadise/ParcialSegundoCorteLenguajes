@@ -1,4 +1,4 @@
-// Generated from /home/linky/Proyects/University/SextoSemestre/LenguajesDeProgramacion/Parcial2/calculadoraPython/calculadora.g4 by ANTLR 4.13.1
+// Generated from /home/linky/Proyects/University/SextoSemestre/LenguajesDeProgramacion/ParcialSegundoCorte/calculadoraFracciones/calculadora.g4 by ANTLR 4.13.1
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
@@ -88,6 +88,18 @@ public class calculadoraBaseListener implements calculadoraListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterReadFraction(calculadoraParser.ReadFractionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitReadFraction(calculadoraParser.ReadFractionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterMulDiv(calculadoraParser.MulDivContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -107,30 +119,6 @@ public class calculadoraBaseListener implements calculadoraListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitAddSub(calculadoraParser.AddSubContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterFloat(calculadoraParser.FloatContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitFloat(calculadoraParser.FloatContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterInt(calculadoraParser.IntContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitInt(calculadoraParser.IntContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

@@ -45,5 +45,4 @@ OMEGA:  'w';
 TAU:    'tau';
 
 
-
 NEWLINE:'\r'? '\n' ;

@@ -20,6 +20,7 @@ class LaplaceTransformVisitor(laplaceVisitor):
 
     def visitNesimaPotencia(self, ctx: laplaceParser.NesimaPotenciaContext):
         n = int(ctx.N().getText())
+        print("Por aqui pase")
         return f"{n}!/(s^{n+1})" 
 
     def visitQesimaPotencia(self, ctx: laplaceParser.QesimaPotenciaContext):
